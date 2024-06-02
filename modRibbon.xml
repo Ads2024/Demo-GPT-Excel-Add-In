@@ -1,0 +1,32 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui"> 
+  <ribbon startFromScratch="false"> 
+    <tabs> 
+      <tab id="CustomTab" label="My Add-in"> 
+        <group id="SimpleControls" label="ChatGPT"> 
+          <button id="Button1" image="AI-icon" size="large" 
+                  label="Ask AI" 
+                  screentip="Ask AI" 
+                  onAction="OpenAI_Completion"/> 
+          <button id="ButtonClearOutput" imageMso="Delete" size="large"
+                  label="Clear Output"
+                  screentip="Clear Output Worksheet"
+                  onAction="ClearOutputSheet"/>
+          <button id="ButtonHelp" image="help" size="large"
+                  label="Help"
+                  screentip="Get Help"
+                  onAction="ShowHelp"/>
+        </group>
+        <group id="SettingsGroup" label="Settings">
+          <button id="ButtonAPIKey" image="key" size="large"
+                  label="Set API Key"
+                  screentip="Set OpenAI API Key"
+                  onAction="SetAPIKey"/>
+          <button id="ButtonModel" image="edit" size="large"
+                  label="Set Model"
+                  screentip="Set OpenAI Model"
+                  onAction="SetModel"/>
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
