@@ -23,9 +23,9 @@ There two excel add-ins in this repo:
 ## 2. Getting started
 ### 2.1 Dependancies
 - To use the ```AI_Plugin``` an OpenAI API key is required (create an account and get API Key at <a href="https://chat.openai.com">https://chat.openai.com</a>)
-- To use the ```Azure_GPT_Addin``` an Azure OPENAI service is required with an already deployed model (see here: <a href="https://azure.microsoft.com/en-au/products/ai-services/openai-service">https://azure.microsoft.com</a>)
-- To modify the plugins you can use the office ribbonx editor to make changes on the xml (see here: <a href="https://github.com/fernandreu/office-ribbonx-editor">https://github.com</a>)
-- The JsonConverter was used to run the addin can be accessed here (see here: <a href="https://github.com/VBA-tools/VBA-JSON">https://github.com</a>)
+- To use the ```Azure_GPT_Addin``` an Azure OPENAI service is required with an already deployed model (see here: <a href="https://azure.microsoft.com/en-au/products/ai-services/openai-service">https://azure.microsoft.com/en-au/products/ai-services/openai-service</a>)
+- To modify the plugins you can use the office ribbonx editor to make changes on the xml (see here: <a href="https://github.com/fernandreu/office-ribbonx-editor">https://github.com/fernandreu/office-ribbonx-editor"</a>)
+- The JsonConverter was used to run the addin can be accessed here (see here: <a href="https://github.com/VBA-tools/VBA-JSON">https://github.com/VBA-tools/VBA-JSON</a>)
 
 ### 2.2 Editing
 - Visual Studio Code (<a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a>)
@@ -66,7 +66,7 @@ To use this addin effectively ensure to complete all the necessary settings as c
   - SetAPIkey : This setting would need to done prior to usage
   - Set Model : This would be our **Deployment Name** not the actual gpt model
   - Set Azure Endpoint: This will be url endpoint provided to you when deploying you application.
-  - Set API : This will default to **2024-02-15-preview** and can be changed if this version deprecates (see here <a href='https://learn.microsoft.com/en-us/azure/ai-services/openai/reference'>https://learn.microsoft.com</a> ).
+  - Set API : This will default to **2024-02-15-preview** and can be changed if this version deprecates (see here <a href='https://learn.microsoft.com/en-us/azure/ai-services/openai/reference'>https://learn.microsoft.com/en-us/azure/ai-services/openai/reference</a> ).
 
 Once the settings is completed, you should select the the data to be queried and click on the Ask AI icon, The results of the query will be displayed in a separate sheet called Results.
 ![alt text](assets/AzureOpenAI.PNG)
