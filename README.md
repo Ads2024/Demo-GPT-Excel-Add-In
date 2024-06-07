@@ -48,11 +48,11 @@ This repository contains the two plugins allong with their respective sripts, th
     |   |   ├── modUI.bas
     |   |   ├── modUtilities.bas 
     │   └── OpenAI-CGPT
-    |   │   ├── modGlobals.vb
-    |   |   ├── modMain.vb
+    |   │   ├── modGlobals.bas
+    |   |   ├── modMain.bas
     |   |   ├── modRibbon.xml
-    |   |   ├── modUI.vb
-    |   |   ├── modUtilities.vb
+    |   |   ├── modUI.bas
+    |   |   ├── modUtilities.bas
 
 <br />
 
