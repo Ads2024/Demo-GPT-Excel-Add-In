@@ -1,7 +1,23 @@
+
+
+<!-- 
+This XML code defines the custom ribbon UI for an Excel Add-In called "ChatGPT". 
+It contains several tabs and groups with buttons that perform various actions. 
+
+The ribbon UI is defined using the customUI namespace. The startFromScratch attribute is set to "false", indicating that the ribbon should not start from scratch.
+
+The "ChatGPT" tab contains two groups: "SimpleControls" and "Settings". The "SimpleControls" group contains three buttons: "Button1", "ButtonClearOutput", and "ButtonHelp". These buttons have different labels, images, and onAction event handlers.
+
+The "Settings" group contains two buttons: "ButtonAPIKey" and "ButtonModel". These buttons are used to set the API key and model for the OpenAI service.
+
+The XML code provides labels, images, sizes, and screentips for each button, as well as the onAction event handlers that specify the actions to be performed when the buttons are clicked.
+
+This XML code can be used to customize the ribbon UI of an Excel Add-In and add functionality to it.
+-->
 <customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui"> 
   <ribbon startFromScratch="false"> 
     <tabs> 
-      <tab id="CustomTab" label="My Add-in"> 
+      <tab id="CustomTab" label="ChatGPT"> 
         <group id="SimpleControls" label="ChatGPT"> 
           <button id="Button1" image="AI-icon" size="large" 
                   label="Ask AI" 
