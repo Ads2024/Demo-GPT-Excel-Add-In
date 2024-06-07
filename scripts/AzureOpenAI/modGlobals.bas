@@ -1,3 +1,6 @@
+' Created on 31/05/2024
+' Modified on 3/06/2024
+
 Option Explicit
 
 ' Global variable for the task pane

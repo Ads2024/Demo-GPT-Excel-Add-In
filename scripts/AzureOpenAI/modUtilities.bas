@@ -1,11 +1,19 @@
+' Description: This script contains utility functions used by the main script to interact with the OpenAI API and process the AI response.
+' Created on: 2024-05-31
+' Modified on: 2024-06-04
+
 Option Explicit
 
+' Function to check if a worksheet exists in the workbook
+' Returns True if the worksheet exists, False otherwise
 Function WorksheetExists(worksheetName As String) As Boolean
     On Error Resume Next
     WorksheetExists = (Not (Sheets(worksheetName) Is Nothing))
     On Error GoTo 0
 End Function
 
+' Function to parse the response from the AI model
+' Returns the content of the message in the response
 Function ParseResponse(ByVal response As String) As String
     On Error Resume Next
     Dim jsonResponse As Object
@@ -14,6 +22,8 @@ Function ParseResponse(ByVal response As String) As String
     On Error GoTo 0
 End Function
 
+' Function to clean a JSON string by removing line breaks and replacing double quotes with single quotes
+' Returns the cleaned JSON string
 Function CleanJSONString(inputStr As String) As String
     On Error Resume Next
     CleanJSONString = Replace(inputStr, vbCrLf, "")
@@ -23,6 +33,8 @@ Function CleanJSONString(inputStr As String) As String
     On Error GoTo 0
 End Function
 
+' Function to replace backslashes followed by double quotes with just double quotes
+' Returns the string with replaced backslashes
 Function ReplaceBackslash(text As Variant) As String
     On Error Resume Next
     Dim i As Integer
@@ -39,7 +51,9 @@ Function ReplaceBackslash(text As Variant) As String
     ReplaceBackslash = newText
     On Error GoTo 0
 End Function
-' Utility function to get AI response
+
+' Utility function to get AI response using the OpenAI API
+' Returns the response from the AI model
 Function GetAIResponse(query As String) As String
     Dim http As Object
     Dim url As String
@@ -64,7 +78,7 @@ Function GetAIResponse(query As String) As String
     ' Get the response
     responseBody = http.responseText
     
-    ' Extract the AI response (this is a simplified example; you may need to parse JSON)
-    GetAIResponse = responseBody ' You need to parse the JSON response to get the actual text
+    ' Extract the AI response
+    GetAIResponse = responseBody
 End Function
 
