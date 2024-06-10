@@ -6,7 +6,6 @@
 ![Microsoft Excel](https://img.shields.io/badge/Microsoft_Excel-217346?logo=microsoft-excel&logoColor=white)&nbsp;&nbsp;
 [![ChatGPT](https://img.shields.io/badge/ChatGPT-74aa9c?style=badge&logo=openai&logoColor=white)](https://chat.openai.com)&nbsp;&nbsp;
 [![MIT license](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Ads2024/GPT-Excel-Add-In/blob/main/LICENSE)&nbsp;&nbsp;
-![Lifecycle:Stable](https://img.shields.io/badge/Lifecycle-Stable-97ca00)&nbsp;&nbsp;
 [![OpenAI](https://img.shields.io/badge/OpenAI-000000?style=badge&logo=openai&logoColor=white)](https://openai.com)&nbsp;&nbsp;
 <!-- badges: end -->
 
