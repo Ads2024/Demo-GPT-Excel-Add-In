@@ -1,4 +1,4 @@
-# GPT-Excel Add In ![alt text](assets/AI-icon.png)
+# Demo-GPT-Excel Add In ![alt text](assets/AI-icon.png)
  Excel based addins linked to external sources via API
  <br /><br />
 
